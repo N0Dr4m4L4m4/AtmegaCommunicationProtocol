@@ -1,0 +1,171 @@
+\hypertarget{timer_8h}{}\doxysection{Layer1/timer.h File Reference}
+\label{timer_8h}\index{Layer1/timer.h@{Layer1/timer.h}}
+This graph shows which files directly or indirectly include this file\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{timer_8h__dep__incl}
+\end{center}
+\end{figure}
+\doxysubsection*{Macros}
+\begin{DoxyCompactItemize}
+\item 
+\#define \mbox{\hyperlink{timer_8h_a3dcb8a6e5089afa0d26a8efc48f39c42}{NO\+\_\+\+PRE}}~0
+\begin{DoxyCompactList}\small\item\em Using no prescaler. \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{timer_8h_a5c04efc33f4f475fecfdfb98fcdb5b52}{PRE\+\_\+8}}~1
+\begin{DoxyCompactList}\small\item\em Using prescaler with 8 of the clock frequency. \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{timer_8h_adf6700c0c13337e4c8db1303c392ca92}{PRE\+\_\+64}}~2
+\begin{DoxyCompactList}\small\item\em Using prescaler with 64 of the clock frequency. \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{timer_8h_a1abb941834bbe061d32ac967753652a5}{PRE\+\_\+256}}~3
+\begin{DoxyCompactList}\small\item\em Using prescaler with 256 of the clock frequency. \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{timer_8h_a7771c0afd96c13e6302ba9fcd3271e2b}{PRE\+\_\+1024}}~4
+\begin{DoxyCompactList}\small\item\em Using prescaler with 1024 of the clock frequency. \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{timer_8h_af7fe3d8df697e3a423b59999c314cbfd}{PRE\+\_\+\+EXT\+\_\+\+CLK\+\_\+\+FALL}}~5
+\begin{DoxyCompactList}\small\item\em Using external clock with fallen edge. \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{timer_8h_aaf9429980289e3fda568addcb155afd0}{PRE\+\_\+\+EXT\+\_\+\+CLK\+\_\+\+RISE}}~6
+\begin{DoxyCompactList}\small\item\em Using external clock with rising edge. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{timer_8h_aa8a37829650405a8ccc75b1ed9b20456}{Init\+Timer\+\_\+0}} ()
+\begin{DoxyCompactList}\small\item\em Initialize Timer 0 and the ISR. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{timer_8h_af631be5096210aca72c407eb82d74f3d}{Start\+Timer\+\_\+0}} (uint8\+\_\+t $\ast$prescaler)
+\begin{DoxyCompactList}\small\item\em Start timer 0 with a pre-\/defined prescaler. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{timer_8h_aae435fa14f91401869f7adf07fcbdada}{Stop\+Timer\+\_\+0}} ()
+\begin{DoxyCompactList}\small\item\em Stops timer 0 from working. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Macro Definition Documentation}
+\mbox{\Hypertarget{timer_8h_a3dcb8a6e5089afa0d26a8efc48f39c42}\label{timer_8h_a3dcb8a6e5089afa0d26a8efc48f39c42}} 
+\index{timer.h@{timer.h}!NO\_PRE@{NO\_PRE}}
+\index{NO\_PRE@{NO\_PRE}!timer.h@{timer.h}}
+\doxysubsubsection{\texorpdfstring{NO\_PRE}{NO\_PRE}}
+{\footnotesize\ttfamily \#define NO\+\_\+\+PRE~0}
+
+
+
+Using no prescaler. 
+
+\mbox{\Hypertarget{timer_8h_a7771c0afd96c13e6302ba9fcd3271e2b}\label{timer_8h_a7771c0afd96c13e6302ba9fcd3271e2b}} 
+\index{timer.h@{timer.h}!PRE\_1024@{PRE\_1024}}
+\index{PRE\_1024@{PRE\_1024}!timer.h@{timer.h}}
+\doxysubsubsection{\texorpdfstring{PRE\_1024}{PRE\_1024}}
+{\footnotesize\ttfamily \#define PRE\+\_\+1024~4}
+
+
+
+Using prescaler with 1024 of the clock frequency. 
+
+\mbox{\Hypertarget{timer_8h_a1abb941834bbe061d32ac967753652a5}\label{timer_8h_a1abb941834bbe061d32ac967753652a5}} 
+\index{timer.h@{timer.h}!PRE\_256@{PRE\_256}}
+\index{PRE\_256@{PRE\_256}!timer.h@{timer.h}}
+\doxysubsubsection{\texorpdfstring{PRE\_256}{PRE\_256}}
+{\footnotesize\ttfamily \#define PRE\+\_\+256~3}
+
+
+
+Using prescaler with 256 of the clock frequency. 
+
+\mbox{\Hypertarget{timer_8h_adf6700c0c13337e4c8db1303c392ca92}\label{timer_8h_adf6700c0c13337e4c8db1303c392ca92}} 
+\index{timer.h@{timer.h}!PRE\_64@{PRE\_64}}
+\index{PRE\_64@{PRE\_64}!timer.h@{timer.h}}
+\doxysubsubsection{\texorpdfstring{PRE\_64}{PRE\_64}}
+{\footnotesize\ttfamily \#define PRE\+\_\+64~2}
+
+
+
+Using prescaler with 64 of the clock frequency. 
+
+\mbox{\Hypertarget{timer_8h_a5c04efc33f4f475fecfdfb98fcdb5b52}\label{timer_8h_a5c04efc33f4f475fecfdfb98fcdb5b52}} 
+\index{timer.h@{timer.h}!PRE\_8@{PRE\_8}}
+\index{PRE\_8@{PRE\_8}!timer.h@{timer.h}}
+\doxysubsubsection{\texorpdfstring{PRE\_8}{PRE\_8}}
+{\footnotesize\ttfamily \#define PRE\+\_\+8~1}
+
+
+
+Using prescaler with 8 of the clock frequency. 
+
+\mbox{\Hypertarget{timer_8h_af7fe3d8df697e3a423b59999c314cbfd}\label{timer_8h_af7fe3d8df697e3a423b59999c314cbfd}} 
+\index{timer.h@{timer.h}!PRE\_EXT\_CLK\_FALL@{PRE\_EXT\_CLK\_FALL}}
+\index{PRE\_EXT\_CLK\_FALL@{PRE\_EXT\_CLK\_FALL}!timer.h@{timer.h}}
+\doxysubsubsection{\texorpdfstring{PRE\_EXT\_CLK\_FALL}{PRE\_EXT\_CLK\_FALL}}
+{\footnotesize\ttfamily \#define PRE\+\_\+\+EXT\+\_\+\+CLK\+\_\+\+FALL~5}
+
+
+
+Using external clock with fallen edge. 
+
+\mbox{\Hypertarget{timer_8h_aaf9429980289e3fda568addcb155afd0}\label{timer_8h_aaf9429980289e3fda568addcb155afd0}} 
+\index{timer.h@{timer.h}!PRE\_EXT\_CLK\_RISE@{PRE\_EXT\_CLK\_RISE}}
+\index{PRE\_EXT\_CLK\_RISE@{PRE\_EXT\_CLK\_RISE}!timer.h@{timer.h}}
+\doxysubsubsection{\texorpdfstring{PRE\_EXT\_CLK\_RISE}{PRE\_EXT\_CLK\_RISE}}
+{\footnotesize\ttfamily \#define PRE\+\_\+\+EXT\+\_\+\+CLK\+\_\+\+RISE~6}
+
+
+
+Using external clock with rising edge. 
+
+
+
+\doxysubsection{Function Documentation}
+\mbox{\Hypertarget{timer_8h_aa8a37829650405a8ccc75b1ed9b20456}\label{timer_8h_aa8a37829650405a8ccc75b1ed9b20456}} 
+\index{timer.h@{timer.h}!InitTimer\_0@{InitTimer\_0}}
+\index{InitTimer\_0@{InitTimer\_0}!timer.h@{timer.h}}
+\doxysubsubsection{\texorpdfstring{InitTimer\_0()}{InitTimer\_0()}}
+{\footnotesize\ttfamily void Init\+Timer\+\_\+0 (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Initialize Timer 0 and the ISR. 
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{timer_8h_aa8a37829650405a8ccc75b1ed9b20456_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{timer_8h_af631be5096210aca72c407eb82d74f3d}\label{timer_8h_af631be5096210aca72c407eb82d74f3d}} 
+\index{timer.h@{timer.h}!StartTimer\_0@{StartTimer\_0}}
+\index{StartTimer\_0@{StartTimer\_0}!timer.h@{timer.h}}
+\doxysubsubsection{\texorpdfstring{StartTimer\_0()}{StartTimer\_0()}}
+{\footnotesize\ttfamily void Start\+Timer\+\_\+0 (\begin{DoxyParamCaption}\item[{uint8\+\_\+t $\ast$}]{prescaler }\end{DoxyParamCaption})}
+
+
+
+Start timer 0 with a pre-\/defined prescaler. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em prescaler} & NO\+\_\+\+PRE, PRE\+\_\+8, PRE\+\_\+64, PRE\+\_\+256, PRE\+\_\+1024 \\
+\hline
+\end{DoxyParams}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{timer_8h_af631be5096210aca72c407eb82d74f3d_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{timer_8h_aae435fa14f91401869f7adf07fcbdada}\label{timer_8h_aae435fa14f91401869f7adf07fcbdada}} 
+\index{timer.h@{timer.h}!StopTimer\_0@{StopTimer\_0}}
+\index{StopTimer\_0@{StopTimer\_0}!timer.h@{timer.h}}
+\doxysubsubsection{\texorpdfstring{StopTimer\_0()}{StopTimer\_0()}}
+{\footnotesize\ttfamily void Stop\+Timer\+\_\+0 (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Stops timer 0 from working. 
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=320pt]{timer_8h_aae435fa14f91401869f7adf07fcbdada_icgraph}
+\end{center}
+\end{figure}

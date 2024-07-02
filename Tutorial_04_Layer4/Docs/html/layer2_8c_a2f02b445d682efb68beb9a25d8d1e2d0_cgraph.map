@@ -1,0 +1,4 @@
+<map id="getMessageWithoutCrc" name="getMessageWithoutCrc">
+<area shape="rect" id="node1" title="Get the message without CRC calculation. Is needed for better performance. Copies data from buffer in..." alt="" coords="5,5,164,32"/>
+<area shape="rect" id="node2" href="$layer1_8c.html#abd4218622d0d31b6837d20253a41fa71" title="Resets receiving buffer." alt="" coords="212,5,300,32"/>
+</map>

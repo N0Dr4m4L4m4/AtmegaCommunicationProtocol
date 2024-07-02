@@ -1,0 +1,104 @@
+\hypertarget{irqhandler_8c}{}\doxysection{IRQHandler/irqhandler.c File Reference}
+\label{irqhandler_8c}\index{IRQHandler/irqhandler.c@{IRQHandler/irqhandler.c}}
+{\ttfamily \#include $<$avr/io.\+h$>$}\newline
+{\ttfamily \#include $<$avr/interrupt.\+h$>$}\newline
+{\ttfamily \#include \char`\"{}../\+Buffer/buffer.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}../\+Layer1/layer1.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}../\+IRQHandler/irqhandler.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}../\+USART/usart.\+h\char`\"{}}\newline
+Include dependency graph for irqhandler.\+c\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{irqhandler_8c__incl}
+\end{center}
+\end{figure}
+\doxysubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{irqhandler_8c_add2d7cdddfb682dcc0391e60cf42c7d6}{ISR}} (TIMER0\+\_\+\+OVF\+\_\+vect)
+\begin{DoxyCompactList}\small\item\em byte\+Cntr\+Rx buffer counter for receiving one byte 0 -\/ 255 \end{DoxyCompactList}\item 
+\mbox{\hyperlink{irqhandler_8c_a9c4665742c6b6eb1f0bb9dde41f7cba3}{ISR}} (PCINT2\+\_\+vect)
+\begin{DoxyCompactList}\small\item\em Construct a new ISR port interrupt. Every edge activates an interrupt. And the port status will be read. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+volatile uint8\+\_\+t \mbox{\hyperlink{irqhandler_8c_a0188c7381335ae6be7ca95fcb25e7d9c}{byte\+Cntr\+Tx}} = 0
+\item 
+volatile uint8\+\_\+t \mbox{\hyperlink{irqhandler_8c_a21bed2e7b4f02f2c8fef669676a8da19}{buff\+Cntr\+Tx}} = 0
+\begin{DoxyCompactList}\small\item\em byte\+Cntr\+Tx byte counter for transmission one byte 1 -\/ 8 \end{DoxyCompactList}\item 
+volatile uint8\+\_\+t \mbox{\hyperlink{irqhandler_8c_a456f384bef5bb54f5c16695ae9bceae3}{buff\+Cntr\+Rx}} = 0
+\begin{DoxyCompactList}\small\item\em buff\+Cntr\+Tx buffer counter for transmission one byte 0 -\/ 255 \end{DoxyCompactList}\item 
+volatile uint8\+\_\+t \mbox{\hyperlink{irqhandler_8c_ac105d7f1560a22590baa8054e00f1a74}{byte\+Cntr\+Rx}} = 0
+\begin{DoxyCompactList}\small\item\em buff\+Cntr\+Rx byte counter for receiving one byte 1 -\/ 8 \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Function Documentation}
+\mbox{\Hypertarget{irqhandler_8c_a9c4665742c6b6eb1f0bb9dde41f7cba3}\label{irqhandler_8c_a9c4665742c6b6eb1f0bb9dde41f7cba3}} 
+\index{irqhandler.c@{irqhandler.c}!ISR@{ISR}}
+\index{ISR@{ISR}!irqhandler.c@{irqhandler.c}}
+\doxysubsubsection{\texorpdfstring{ISR()}{ISR()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily ISR (\begin{DoxyParamCaption}\item[{PCINT2\+\_\+vect}]{ }\end{DoxyParamCaption})}
+
+
+
+Construct a new ISR port interrupt. Every edge activates an interrupt. And the port status will be read. 
+
+\mbox{\Hypertarget{irqhandler_8c_add2d7cdddfb682dcc0391e60cf42c7d6}\label{irqhandler_8c_add2d7cdddfb682dcc0391e60cf42c7d6}} 
+\index{irqhandler.c@{irqhandler.c}!ISR@{ISR}}
+\index{ISR@{ISR}!irqhandler.c@{irqhandler.c}}
+\doxysubsubsection{\texorpdfstring{ISR()}{ISR()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily ISR (\begin{DoxyParamCaption}\item[{TIMER0\+\_\+\+OVF\+\_\+vect}]{ }\end{DoxyParamCaption})}
+
+
+
+byte\+Cntr\+Rx buffer counter for receiving one byte 0 -\/ 255 
+
+Construct a new ISR timer interrupt. Every interrupt is checking if a package is ready to send Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=320pt]{irqhandler_8c_add2d7cdddfb682dcc0391e60cf42c7d6_cgraph}
+\end{center}
+\end{figure}
+
+
+\doxysubsection{Variable Documentation}
+\mbox{\Hypertarget{irqhandler_8c_a456f384bef5bb54f5c16695ae9bceae3}\label{irqhandler_8c_a456f384bef5bb54f5c16695ae9bceae3}} 
+\index{irqhandler.c@{irqhandler.c}!buffCntrRx@{buffCntrRx}}
+\index{buffCntrRx@{buffCntrRx}!irqhandler.c@{irqhandler.c}}
+\doxysubsubsection{\texorpdfstring{buffCntrRx}{buffCntrRx}}
+{\footnotesize\ttfamily volatile uint8\+\_\+t buff\+Cntr\+Rx = 0}
+
+
+
+buff\+Cntr\+Tx buffer counter for transmission one byte 0 -\/ 255 
+
+\mbox{\Hypertarget{irqhandler_8c_a21bed2e7b4f02f2c8fef669676a8da19}\label{irqhandler_8c_a21bed2e7b4f02f2c8fef669676a8da19}} 
+\index{irqhandler.c@{irqhandler.c}!buffCntrTx@{buffCntrTx}}
+\index{buffCntrTx@{buffCntrTx}!irqhandler.c@{irqhandler.c}}
+\doxysubsubsection{\texorpdfstring{buffCntrTx}{buffCntrTx}}
+{\footnotesize\ttfamily volatile uint8\+\_\+t buff\+Cntr\+Tx = 0}
+
+
+
+byte\+Cntr\+Tx byte counter for transmission one byte 1 -\/ 8 
+
+\mbox{\Hypertarget{irqhandler_8c_ac105d7f1560a22590baa8054e00f1a74}\label{irqhandler_8c_ac105d7f1560a22590baa8054e00f1a74}} 
+\index{irqhandler.c@{irqhandler.c}!byteCntrRx@{byteCntrRx}}
+\index{byteCntrRx@{byteCntrRx}!irqhandler.c@{irqhandler.c}}
+\doxysubsubsection{\texorpdfstring{byteCntrRx}{byteCntrRx}}
+{\footnotesize\ttfamily volatile uint8\+\_\+t byte\+Cntr\+Rx = 0}
+
+
+
+buff\+Cntr\+Rx byte counter for receiving one byte 1 -\/ 8 
+
+\mbox{\Hypertarget{irqhandler_8c_a0188c7381335ae6be7ca95fcb25e7d9c}\label{irqhandler_8c_a0188c7381335ae6be7ca95fcb25e7d9c}} 
+\index{irqhandler.c@{irqhandler.c}!byteCntrTx@{byteCntrTx}}
+\index{byteCntrTx@{byteCntrTx}!irqhandler.c@{irqhandler.c}}
+\doxysubsubsection{\texorpdfstring{byteCntrTx}{byteCntrTx}}
+{\footnotesize\ttfamily volatile uint8\+\_\+t byte\+Cntr\+Tx = 0}
+

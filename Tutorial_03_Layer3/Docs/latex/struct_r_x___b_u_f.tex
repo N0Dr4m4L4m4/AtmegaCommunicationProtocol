@@ -1,0 +1,117 @@
+\hypertarget{struct_r_x___b_u_f}{}\doxysection{RX\+\_\+\+BUF Struct Reference}
+\label{struct_r_x___b_u_f}\index{RX\_BUF@{RX\_BUF}}
+
+
+Receiving buffer struct with flags, mutex and payload.  
+
+
+
+
+{\ttfamily \#include $<$buffer.\+h$>$}
+
+\doxysubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+volatile uint8\+\_\+t \mbox{\hyperlink{struct_r_x___b_u_f_aa610bdd519639e5e912ba09b79a1847d}{BUFFER}} \mbox{[}256\mbox{]}
+\item 
+volatile uint8\+\_\+t \mbox{\hyperlink{struct_r_x___b_u_f_affad9c67873f4280fb2b8ffb14fe5eee}{SIZE}}
+\begin{DoxyCompactList}\small\item\em Receiving buffer of 256 items. \end{DoxyCompactList}\item 
+volatile uint8\+\_\+t \mbox{\hyperlink{struct_r_x___b_u_f_a6669ee799a174a96c3f9eace334670a5}{MUTEX}}\+: 1
+\begin{DoxyCompactList}\small\item\em Size of the received payload. \end{DoxyCompactList}\item 
+volatile uint8\+\_\+t \mbox{\hyperlink{struct_r_x___b_u_f_a8fe4c97f9e5de1606ee59e55924cba59}{PREAMPLE\+\_\+\+FLAG}}\+: 1
+\begin{DoxyCompactList}\small\item\em Mutual exclusion lock. \end{DoxyCompactList}\item 
+volatile uint8\+\_\+t \mbox{\hyperlink{struct_r_x___b_u_f_a61a448a4e9082c8bc76ec56622ead4da}{CRC32\+\_\+\+FLAG}}\+: 1
+\begin{DoxyCompactList}\small\item\em Preample flag received. \end{DoxyCompactList}\item 
+volatile uint8\+\_\+t \mbox{\hyperlink{struct_r_x___b_u_f_a55e7c91a3928dae9a40c2db0135a1297}{SIZE\+\_\+\+FLAG}}\+: 1
+\begin{DoxyCompactList}\small\item\em CRC32 value received flag. \end{DoxyCompactList}\item 
+volatile uint8\+\_\+t \mbox{\hyperlink{struct_r_x___b_u_f_aaa6857474f61ee6a8f47f3e35d11d55d}{PAYLOAD\+\_\+\+FLAG}}\+: 1
+\begin{DoxyCompactList}\small\item\em Payload size received flag. \end{DoxyCompactList}\item 
+volatile uint8\+\_\+t \mbox{\hyperlink{struct_r_x___b_u_f_a452443c9e6be57a5d9bfdc0fb8e315f1}{FULL\+\_\+\+FLAG}}\+: 1
+\begin{DoxyCompactList}\small\item\em Payload received flag. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Receiving buffer struct with flags, mutex and payload. 
+
+\doxysubsection{Member Data Documentation}
+\mbox{\Hypertarget{struct_r_x___b_u_f_aa610bdd519639e5e912ba09b79a1847d}\label{struct_r_x___b_u_f_aa610bdd519639e5e912ba09b79a1847d}} 
+\index{RX\_BUF@{RX\_BUF}!BUFFER@{BUFFER}}
+\index{BUFFER@{BUFFER}!RX\_BUF@{RX\_BUF}}
+\doxysubsubsection{\texorpdfstring{BUFFER}{BUFFER}}
+{\footnotesize\ttfamily volatile uint8\+\_\+t RX\+\_\+\+BUF\+::\+BUFFER\mbox{[}256\mbox{]}}
+
+\mbox{\Hypertarget{struct_r_x___b_u_f_a61a448a4e9082c8bc76ec56622ead4da}\label{struct_r_x___b_u_f_a61a448a4e9082c8bc76ec56622ead4da}} 
+\index{RX\_BUF@{RX\_BUF}!CRC32\_FLAG@{CRC32\_FLAG}}
+\index{CRC32\_FLAG@{CRC32\_FLAG}!RX\_BUF@{RX\_BUF}}
+\doxysubsubsection{\texorpdfstring{CRC32\_FLAG}{CRC32\_FLAG}}
+{\footnotesize\ttfamily volatile uint8\+\_\+t RX\+\_\+\+BUF\+::\+CRC32\+\_\+\+FLAG}
+
+
+
+Preample flag received. 
+
+\mbox{\Hypertarget{struct_r_x___b_u_f_a452443c9e6be57a5d9bfdc0fb8e315f1}\label{struct_r_x___b_u_f_a452443c9e6be57a5d9bfdc0fb8e315f1}} 
+\index{RX\_BUF@{RX\_BUF}!FULL\_FLAG@{FULL\_FLAG}}
+\index{FULL\_FLAG@{FULL\_FLAG}!RX\_BUF@{RX\_BUF}}
+\doxysubsubsection{\texorpdfstring{FULL\_FLAG}{FULL\_FLAG}}
+{\footnotesize\ttfamily volatile uint8\+\_\+t RX\+\_\+\+BUF\+::\+FULL\+\_\+\+FLAG}
+
+
+
+Payload received flag. 
+
+\mbox{\Hypertarget{struct_r_x___b_u_f_a6669ee799a174a96c3f9eace334670a5}\label{struct_r_x___b_u_f_a6669ee799a174a96c3f9eace334670a5}} 
+\index{RX\_BUF@{RX\_BUF}!MUTEX@{MUTEX}}
+\index{MUTEX@{MUTEX}!RX\_BUF@{RX\_BUF}}
+\doxysubsubsection{\texorpdfstring{MUTEX}{MUTEX}}
+{\footnotesize\ttfamily volatile uint8\+\_\+t RX\+\_\+\+BUF\+::\+MUTEX}
+
+
+
+Size of the received payload. 
+
+\mbox{\Hypertarget{struct_r_x___b_u_f_aaa6857474f61ee6a8f47f3e35d11d55d}\label{struct_r_x___b_u_f_aaa6857474f61ee6a8f47f3e35d11d55d}} 
+\index{RX\_BUF@{RX\_BUF}!PAYLOAD\_FLAG@{PAYLOAD\_FLAG}}
+\index{PAYLOAD\_FLAG@{PAYLOAD\_FLAG}!RX\_BUF@{RX\_BUF}}
+\doxysubsubsection{\texorpdfstring{PAYLOAD\_FLAG}{PAYLOAD\_FLAG}}
+{\footnotesize\ttfamily volatile uint8\+\_\+t RX\+\_\+\+BUF\+::\+PAYLOAD\+\_\+\+FLAG}
+
+
+
+Payload size received flag. 
+
+\mbox{\Hypertarget{struct_r_x___b_u_f_a8fe4c97f9e5de1606ee59e55924cba59}\label{struct_r_x___b_u_f_a8fe4c97f9e5de1606ee59e55924cba59}} 
+\index{RX\_BUF@{RX\_BUF}!PREAMPLE\_FLAG@{PREAMPLE\_FLAG}}
+\index{PREAMPLE\_FLAG@{PREAMPLE\_FLAG}!RX\_BUF@{RX\_BUF}}
+\doxysubsubsection{\texorpdfstring{PREAMPLE\_FLAG}{PREAMPLE\_FLAG}}
+{\footnotesize\ttfamily volatile uint8\+\_\+t RX\+\_\+\+BUF\+::\+PREAMPLE\+\_\+\+FLAG}
+
+
+
+Mutual exclusion lock. 
+
+\mbox{\Hypertarget{struct_r_x___b_u_f_affad9c67873f4280fb2b8ffb14fe5eee}\label{struct_r_x___b_u_f_affad9c67873f4280fb2b8ffb14fe5eee}} 
+\index{RX\_BUF@{RX\_BUF}!SIZE@{SIZE}}
+\index{SIZE@{SIZE}!RX\_BUF@{RX\_BUF}}
+\doxysubsubsection{\texorpdfstring{SIZE}{SIZE}}
+{\footnotesize\ttfamily volatile uint8\+\_\+t RX\+\_\+\+BUF\+::\+SIZE}
+
+
+
+Receiving buffer of 256 items. 
+
+\mbox{\Hypertarget{struct_r_x___b_u_f_a55e7c91a3928dae9a40c2db0135a1297}\label{struct_r_x___b_u_f_a55e7c91a3928dae9a40c2db0135a1297}} 
+\index{RX\_BUF@{RX\_BUF}!SIZE\_FLAG@{SIZE\_FLAG}}
+\index{SIZE\_FLAG@{SIZE\_FLAG}!RX\_BUF@{RX\_BUF}}
+\doxysubsubsection{\texorpdfstring{SIZE\_FLAG}{SIZE\_FLAG}}
+{\footnotesize\ttfamily volatile uint8\+\_\+t RX\+\_\+\+BUF\+::\+SIZE\+\_\+\+FLAG}
+
+
+
+CRC32 value received flag. 
+
+
+
+The documentation for this struct was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+Buffer/\mbox{\hyperlink{buffer_8h}{buffer.\+h}}\end{DoxyCompactItemize}

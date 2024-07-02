@@ -1,0 +1,95 @@
+\hypertarget{usart_8c}{}\doxysection{USART/usart.c File Reference}
+\label{usart_8c}\index{USART/usart.c@{USART/usart.c}}
+{\ttfamily \#include $<$avr/io.\+h$>$}\newline
+{\ttfamily \#include $<$avr/interrupt.\+h$>$}\newline
+Include dependency graph for usart.\+c\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=220pt]{usart_8c__incl}
+\end{center}
+\end{figure}
+\doxysubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{usart_8c_ab82ba6879177c147c749c71cb7d7ba01}{USART\+\_\+\+Init}} (unsigned int ubrr, int isr\+\_\+on)
+\begin{DoxyCompactList}\small\item\em Is used to initialize the USART interface for serial communication. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{usart_8c_ab8c416106cf1aff4ccdb3da4860fc179}{USART\+\_\+\+Transmit}} (unsigned char data)
+\begin{DoxyCompactList}\small\item\em Send one character via the serial interface. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{usart_8c_a4bd53ffeb1dce4e777166b2aa8e5cac3}{USART\+\_\+\+Transmit\+\_\+\+String}} (char $\ast$s)
+\begin{DoxyCompactList}\small\item\em Sends more than one character via the serial interface. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Function Documentation}
+\mbox{\Hypertarget{usart_8c_ab82ba6879177c147c749c71cb7d7ba01}\label{usart_8c_ab82ba6879177c147c749c71cb7d7ba01}} 
+\index{usart.c@{usart.c}!USART\_Init@{USART\_Init}}
+\index{USART\_Init@{USART\_Init}!usart.c@{usart.c}}
+\doxysubsubsection{\texorpdfstring{USART\_Init()}{USART\_Init()}}
+{\footnotesize\ttfamily void USART\+\_\+\+Init (\begin{DoxyParamCaption}\item[{unsigned int}]{ubrr,  }\item[{int}]{isr\+\_\+on }\end{DoxyParamCaption})}
+
+
+
+Is used to initialize the USART interface for serial communication. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em ubrr} & calculated UBRR value (see ATmega doc for more information) \\
+\hline
+{\em isr\+\_\+on} & Should receiver interrupt service routine be enabled \\
+\hline
+\end{DoxyParams}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=221pt]{usart_8c_ab82ba6879177c147c749c71cb7d7ba01_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{usart_8c_ab8c416106cf1aff4ccdb3da4860fc179}\label{usart_8c_ab8c416106cf1aff4ccdb3da4860fc179}} 
+\index{usart.c@{usart.c}!USART\_Transmit@{USART\_Transmit}}
+\index{USART\_Transmit@{USART\_Transmit}!usart.c@{usart.c}}
+\doxysubsubsection{\texorpdfstring{USART\_Transmit()}{USART\_Transmit()}}
+{\footnotesize\ttfamily void USART\+\_\+\+Transmit (\begin{DoxyParamCaption}\item[{unsigned char}]{data }\end{DoxyParamCaption})}
+
+
+
+Send one character via the serial interface. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em data} & Character e.\+g in hex, octal or binary \\
+\hline
+\end{DoxyParams}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{usart_8c_ab8c416106cf1aff4ccdb3da4860fc179_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{usart_8c_a4bd53ffeb1dce4e777166b2aa8e5cac3}\label{usart_8c_a4bd53ffeb1dce4e777166b2aa8e5cac3}} 
+\index{usart.c@{usart.c}!USART\_Transmit\_String@{USART\_Transmit\_String}}
+\index{USART\_Transmit\_String@{USART\_Transmit\_String}!usart.c@{usart.c}}
+\doxysubsubsection{\texorpdfstring{USART\_Transmit\_String()}{USART\_Transmit\_String()}}
+{\footnotesize\ttfamily void USART\+\_\+\+Transmit\+\_\+\+String (\begin{DoxyParamCaption}\item[{char $\ast$}]{s }\end{DoxyParamCaption})}
+
+
+
+Sends more than one character via the serial interface. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em s} & String of characters \\
+\hline
+\end{DoxyParams}
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=330pt]{usart_8c_a4bd53ffeb1dce4e777166b2aa8e5cac3_cgraph}
+\end{center}
+\end{figure}

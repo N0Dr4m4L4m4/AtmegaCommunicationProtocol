@@ -1,0 +1,106 @@
+\hypertarget{crc32_8h}{}\doxysection{CRC32/crc32.h File Reference}
+\label{crc32_8h}\index{CRC32/crc32.h@{CRC32/crc32.h}}
+This graph shows which files directly or indirectly include this file\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=264pt]{crc32_8h__dep__incl}
+\end{center}
+\end{figure}
+\doxysubsection*{Macros}
+\begin{DoxyCompactItemize}
+\item 
+\#define \mbox{\hyperlink{crc32_8h_a41f9c5fb8b08eb5dc3edce4dcb37fee7}{true}}~1
+\begin{DoxyCompactList}\small\item\em Predefined true. \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{crc32_8h_a65e9886d74aaee76545e83dd09011727}{false}}~0
+\begin{DoxyCompactList}\small\item\em Predefined false. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+int \mbox{\hyperlink{crc32_8h_a9de6603ea79555c1e3f3d27d2aab8060}{Check\+CRC32}} (uint8\+\_\+t $\ast$payload, uint8\+\_\+t size)
+\begin{DoxyCompactList}\small\item\em Calculates the CRC32 checksum of the payload with size max. 250 and compares it with the recieved one. \end{DoxyCompactList}\item 
+uint32\+\_\+t \mbox{\hyperlink{crc32_8h_a759eb2a449a7ff49f57bc3f9ec833d50}{Calc\+CRC32}} (volatile uint8\+\_\+t $\ast$payload, uint8\+\_\+t size)
+\begin{DoxyCompactList}\small\item\em Calculate the CRC32 of a given payload. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Macro Definition Documentation}
+\mbox{\Hypertarget{crc32_8h_a65e9886d74aaee76545e83dd09011727}\label{crc32_8h_a65e9886d74aaee76545e83dd09011727}} 
+\index{crc32.h@{crc32.h}!false@{false}}
+\index{false@{false}!crc32.h@{crc32.h}}
+\doxysubsubsection{\texorpdfstring{false}{false}}
+{\footnotesize\ttfamily \#define false~0}
+
+
+
+Predefined false. 
+
+\mbox{\Hypertarget{crc32_8h_a41f9c5fb8b08eb5dc3edce4dcb37fee7}\label{crc32_8h_a41f9c5fb8b08eb5dc3edce4dcb37fee7}} 
+\index{crc32.h@{crc32.h}!true@{true}}
+\index{true@{true}!crc32.h@{crc32.h}}
+\doxysubsubsection{\texorpdfstring{true}{true}}
+{\footnotesize\ttfamily \#define true~1}
+
+
+
+Predefined true. 
+
+
+
+\doxysubsection{Function Documentation}
+\mbox{\Hypertarget{crc32_8h_a759eb2a449a7ff49f57bc3f9ec833d50}\label{crc32_8h_a759eb2a449a7ff49f57bc3f9ec833d50}} 
+\index{crc32.h@{crc32.h}!CalcCRC32@{CalcCRC32}}
+\index{CalcCRC32@{CalcCRC32}!crc32.h@{crc32.h}}
+\doxysubsubsection{\texorpdfstring{CalcCRC32()}{CalcCRC32()}}
+{\footnotesize\ttfamily uint32\+\_\+t Calc\+CRC32 (\begin{DoxyParamCaption}\item[{volatile uint8\+\_\+t $\ast$}]{payload,  }\item[{uint8\+\_\+t}]{size }\end{DoxyParamCaption})}
+
+
+
+Calculate the CRC32 of a given payload. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em payload} & Payload as uint8\+\_\+t array \\
+\hline
+{\em size} & Size of the payload \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+uint32\+\_\+t crc32 checksum 
+\end{DoxyReturn}
+\mbox{\Hypertarget{crc32_8h_a9de6603ea79555c1e3f3d27d2aab8060}\label{crc32_8h_a9de6603ea79555c1e3f3d27d2aab8060}} 
+\index{crc32.h@{crc32.h}!CheckCRC32@{CheckCRC32}}
+\index{CheckCRC32@{CheckCRC32}!crc32.h@{crc32.h}}
+\doxysubsubsection{\texorpdfstring{CheckCRC32()}{CheckCRC32()}}
+{\footnotesize\ttfamily int Check\+CRC32 (\begin{DoxyParamCaption}\item[{uint8\+\_\+t $\ast$}]{payload,  }\item[{uint8\+\_\+t}]{size }\end{DoxyParamCaption})}
+
+
+
+Calculates the CRC32 checksum of the payload with size max. 250 and compares it with the recieved one. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em payload} & Payload as array \\
+\hline
+{\em size} & Size of the given payload \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+int true 1 (equal) $\vert$ false 0 (not equal) 
+\end{DoxyReturn}
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=258pt]{crc32_8h_a9de6603ea79555c1e3f3d27d2aab8060_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=261pt]{crc32_8h_a9de6603ea79555c1e3f3d27d2aab8060_icgraph}
+\end{center}
+\end{figure}

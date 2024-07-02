@@ -1,0 +1,48 @@
+\hypertarget{irqhandler_8h}{}\doxysection{IRQHandler/irqhandler.h File Reference}
+\label{irqhandler_8h}\index{IRQHandler/irqhandler.h@{IRQHandler/irqhandler.h}}
+This graph shows which files directly or indirectly include this file\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=300pt]{irqhandler_8h__dep__incl}
+\end{center}
+\end{figure}
+\doxysubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{irqhandler_8h_add2d7cdddfb682dcc0391e60cf42c7d6}{ISR}} (TIMER0\+\_\+\+OVF\+\_\+vect)
+\begin{DoxyCompactList}\small\item\em byte\+Cntr\+Rx buffer counter for receiving one byte 0 -\/ 255 \end{DoxyCompactList}\item 
+\mbox{\hyperlink{irqhandler_8h_a9c4665742c6b6eb1f0bb9dde41f7cba3}{ISR}} (PCINT2\+\_\+vect)
+\begin{DoxyCompactList}\small\item\em Construct a new ISR port interrupt. Every edge activates an interrupt. And the port status will be read. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Function Documentation}
+\mbox{\Hypertarget{irqhandler_8h_a9c4665742c6b6eb1f0bb9dde41f7cba3}\label{irqhandler_8h_a9c4665742c6b6eb1f0bb9dde41f7cba3}} 
+\index{irqhandler.h@{irqhandler.h}!ISR@{ISR}}
+\index{ISR@{ISR}!irqhandler.h@{irqhandler.h}}
+\doxysubsubsection{\texorpdfstring{ISR()}{ISR()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily ISR (\begin{DoxyParamCaption}\item[{PCINT2\+\_\+vect}]{ }\end{DoxyParamCaption})}
+
+
+
+Construct a new ISR port interrupt. Every edge activates an interrupt. And the port status will be read. 
+
+\mbox{\Hypertarget{irqhandler_8h_add2d7cdddfb682dcc0391e60cf42c7d6}\label{irqhandler_8h_add2d7cdddfb682dcc0391e60cf42c7d6}} 
+\index{irqhandler.h@{irqhandler.h}!ISR@{ISR}}
+\index{ISR@{ISR}!irqhandler.h@{irqhandler.h}}
+\doxysubsubsection{\texorpdfstring{ISR()}{ISR()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily ISR (\begin{DoxyParamCaption}\item[{TIMER0\+\_\+\+OVF\+\_\+vect}]{ }\end{DoxyParamCaption})}
+
+
+
+byte\+Cntr\+Rx buffer counter for receiving one byte 0 -\/ 255 
+
+Construct a new ISR timer interrupt. Every interrupt is checking if a package is ready to send Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=320pt]{irqhandler_8h_add2d7cdddfb682dcc0391e60cf42c7d6_cgraph}
+\end{center}
+\end{figure}

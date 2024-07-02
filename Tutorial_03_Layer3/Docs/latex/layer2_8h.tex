@@ -1,0 +1,231 @@
+\hypertarget{layer2_8h}{}\doxysection{Layer2/layer2.h File Reference}
+\label{layer2_8h}\index{Layer2/layer2.h@{Layer2/layer2.h}}
+This graph shows which files directly or indirectly include this file\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{layer2_8h__dep__incl}
+\end{center}
+\end{figure}
+\doxysubsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+struct \mbox{\hyperlink{struct_msg_service}{Msg\+Service}}
+\begin{DoxyCompactList}\small\item\em Struct for message service to save the predefined prescaler. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+uint32\+\_\+t \mbox{\hyperlink{layer2_8h_a759eb2a449a7ff49f57bc3f9ec833d50}{Calc\+CRC32}} (volatile uint8\+\_\+t $\ast$payload, uint8\+\_\+t size)
+\begin{DoxyCompactList}\small\item\em Calculate the CRC32 of a given payload. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{layer2_8h_a30537337faf9a89c325c0a39a63ab0ab}{get\+Message}} (uint8\+\_\+t $\ast$msg, uint8\+\_\+t $\ast$size, uint8\+\_\+t $\ast$error)
+\begin{DoxyCompactList}\small\item\em Check if a message was recieved, if yes\+: message will be written in the given msg pointer when crc checksum is correct. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{layer2_8h_a2f02b445d682efb68beb9a25d8d1e2d0}{get\+Message\+Without\+Crc}} (uint8\+\_\+t $\ast$msg, uint8\+\_\+t $\ast$size, uint8\+\_\+t $\ast$error)
+\begin{DoxyCompactList}\small\item\em Get the message without CRC calculation. Is needed for better performance. Copies data from buffer in given parameters. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{layer2_8h_a1a1232f7ff473df2e38e88d9894e2d30}{send\+Message}} (uint8\+\_\+t $\ast$payload, uint8\+\_\+t size)
+\begin{DoxyCompactList}\small\item\em Send message with a given payload and size. Calculates the CRC32 of the payload notify layer1 to starts transmission. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{layer2_8h_ad02df7f08e0059fa11fa8677d5288ab6}{Init\+Message\+Service\+TX}} (uint8\+\_\+t prescaler, volatile uint8\+\_\+t $\ast$port, uint8\+\_\+t $\ast$mask)
+\begin{DoxyCompactList}\small\item\em Initialize transmitter service to send messages with a given port, mask and prescaler for clock. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{layer2_8h_ae6ec8b5779d43300778a6667f661c79b}{Init\+Message\+Service\+RX}} ()
+\begin{DoxyCompactList}\small\item\em Initialize receiver service to receive messages. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{layer2_8h_a5b4f13589b32ae2c8e9a152412daa7d3}{Check\+Message}} ()
+\end{DoxyCompactItemize}
+\doxysubsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+struct \mbox{\hyperlink{struct_msg_service}{Msg\+Service}} \mbox{\hyperlink{layer2_8h_a3382a64e087cd31c5819d263711c499c}{msg\+Service}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Function Documentation}
+\mbox{\Hypertarget{layer2_8h_a759eb2a449a7ff49f57bc3f9ec833d50}\label{layer2_8h_a759eb2a449a7ff49f57bc3f9ec833d50}} 
+\index{layer2.h@{layer2.h}!CalcCRC32@{CalcCRC32}}
+\index{CalcCRC32@{CalcCRC32}!layer2.h@{layer2.h}}
+\doxysubsubsection{\texorpdfstring{CalcCRC32()}{CalcCRC32()}}
+{\footnotesize\ttfamily uint32\+\_\+t Calc\+CRC32 (\begin{DoxyParamCaption}\item[{volatile uint8\+\_\+t $\ast$}]{payload,  }\item[{uint8\+\_\+t}]{size }\end{DoxyParamCaption})}
+
+
+
+Calculate the CRC32 of a given payload. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em payload} & Payload as uint8\+\_\+t array \\
+\hline
+{\em size} & Size of the payload \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+uint32\+\_\+t crc32 checksum 
+\end{DoxyReturn}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{layer2_8h_a759eb2a449a7ff49f57bc3f9ec833d50_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{layer2_8h_a5b4f13589b32ae2c8e9a152412daa7d3}\label{layer2_8h_a5b4f13589b32ae2c8e9a152412daa7d3}} 
+\index{layer2.h@{layer2.h}!CheckMessage@{CheckMessage}}
+\index{CheckMessage@{CheckMessage}!layer2.h@{layer2.h}}
+\doxysubsubsection{\texorpdfstring{CheckMessage()}{CheckMessage()}}
+{\footnotesize\ttfamily void Check\+Message (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{layer2_8h_a30537337faf9a89c325c0a39a63ab0ab}\label{layer2_8h_a30537337faf9a89c325c0a39a63ab0ab}} 
+\index{layer2.h@{layer2.h}!getMessage@{getMessage}}
+\index{getMessage@{getMessage}!layer2.h@{layer2.h}}
+\doxysubsubsection{\texorpdfstring{getMessage()}{getMessage()}}
+{\footnotesize\ttfamily void get\+Message (\begin{DoxyParamCaption}\item[{uint8\+\_\+t $\ast$}]{msg,  }\item[{uint8\+\_\+t $\ast$}]{size,  }\item[{uint8\+\_\+t $\ast$}]{error }\end{DoxyParamCaption})}
+
+
+
+Check if a message was recieved, if yes\+: message will be written in the given msg pointer when crc checksum is correct. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em msg} & pointer where the received message will be written \\
+\hline
+{\em size} & pointer of the size of the message \\
+\hline
+{\em error} & pointer of the error handeling \\
+\hline
+\end{DoxyParams}
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{layer2_8h_a30537337faf9a89c325c0a39a63ab0ab_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{layer2_8h_a2f02b445d682efb68beb9a25d8d1e2d0}\label{layer2_8h_a2f02b445d682efb68beb9a25d8d1e2d0}} 
+\index{layer2.h@{layer2.h}!getMessageWithoutCrc@{getMessageWithoutCrc}}
+\index{getMessageWithoutCrc@{getMessageWithoutCrc}!layer2.h@{layer2.h}}
+\doxysubsubsection{\texorpdfstring{getMessageWithoutCrc()}{getMessageWithoutCrc()}}
+{\footnotesize\ttfamily void get\+Message\+Without\+Crc (\begin{DoxyParamCaption}\item[{uint8\+\_\+t $\ast$}]{msg,  }\item[{uint8\+\_\+t $\ast$}]{size,  }\item[{uint8\+\_\+t $\ast$}]{error }\end{DoxyParamCaption})}
+
+
+
+Get the message without CRC calculation. Is needed for better performance. Copies data from buffer in given parameters. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em msg} & pointer where the received message will be written \\
+\hline
+{\em size} & pointer of the size of the message \\
+\hline
+{\em error} & pointer of the error handeling \\
+\hline
+\end{DoxyParams}
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=301pt]{layer2_8h_a2f02b445d682efb68beb9a25d8d1e2d0_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{layer2_8h_a2f02b445d682efb68beb9a25d8d1e2d0_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{layer2_8h_ae6ec8b5779d43300778a6667f661c79b}\label{layer2_8h_ae6ec8b5779d43300778a6667f661c79b}} 
+\index{layer2.h@{layer2.h}!InitMessageServiceRX@{InitMessageServiceRX}}
+\index{InitMessageServiceRX@{InitMessageServiceRX}!layer2.h@{layer2.h}}
+\doxysubsubsection{\texorpdfstring{InitMessageServiceRX()}{InitMessageServiceRX()}}
+{\footnotesize\ttfamily void Init\+Message\+Service\+RX (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Initialize receiver service to receive messages. 
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=267pt]{layer2_8h_ae6ec8b5779d43300778a6667f661c79b_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{layer2_8h_ad02df7f08e0059fa11fa8677d5288ab6}\label{layer2_8h_ad02df7f08e0059fa11fa8677d5288ab6}} 
+\index{layer2.h@{layer2.h}!InitMessageServiceTX@{InitMessageServiceTX}}
+\index{InitMessageServiceTX@{InitMessageServiceTX}!layer2.h@{layer2.h}}
+\doxysubsubsection{\texorpdfstring{InitMessageServiceTX()}{InitMessageServiceTX()}}
+{\footnotesize\ttfamily void Init\+Message\+Service\+TX (\begin{DoxyParamCaption}\item[{uint8\+\_\+t}]{prescaler,  }\item[{volatile uint8\+\_\+t $\ast$}]{port,  }\item[{uint8\+\_\+t $\ast$}]{mask }\end{DoxyParamCaption})}
+
+
+
+Initialize transmitter service to send messages with a given port, mask and prescaler for clock. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em prescaler} & NO\+\_\+\+PRE, PRE\+\_\+8, PRE\+\_\+64, PRE\+\_\+256, PRE\+\_\+1024 \\
+\hline
+{\em port} & Pointer of the port for transmission e.\+g PD \\
+\hline
+{\em mask} & Pointer of the mask to the port register \\
+\hline
+\end{DoxyParams}
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=291pt]{layer2_8h_ad02df7f08e0059fa11fa8677d5288ab6_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=265pt]{layer2_8h_ad02df7f08e0059fa11fa8677d5288ab6_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{layer2_8h_a1a1232f7ff473df2e38e88d9894e2d30}\label{layer2_8h_a1a1232f7ff473df2e38e88d9894e2d30}} 
+\index{layer2.h@{layer2.h}!sendMessage@{sendMessage}}
+\index{sendMessage@{sendMessage}!layer2.h@{layer2.h}}
+\doxysubsubsection{\texorpdfstring{sendMessage()}{sendMessage()}}
+{\footnotesize\ttfamily void send\+Message (\begin{DoxyParamCaption}\item[{uint8\+\_\+t $\ast$}]{payload,  }\item[{uint8\+\_\+t}]{size }\end{DoxyParamCaption})}
+
+
+
+Send message with a given payload and size. Calculates the CRC32 of the payload notify layer1 to starts transmission. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em payload} & pointer of the payload \\
+\hline
+{\em size} & size of the payload \\
+\hline
+\end{DoxyParams}
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=265pt]{layer2_8h_a1a1232f7ff473df2e38e88d9894e2d30_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{layer2_8h_a1a1232f7ff473df2e38e88d9894e2d30_icgraph}
+\end{center}
+\end{figure}
+
+
+\doxysubsection{Variable Documentation}
+\mbox{\Hypertarget{layer2_8h_a3382a64e087cd31c5819d263711c499c}\label{layer2_8h_a3382a64e087cd31c5819d263711c499c}} 
+\index{layer2.h@{layer2.h}!msgService@{msgService}}
+\index{msgService@{msgService}!layer2.h@{layer2.h}}
+\doxysubsubsection{\texorpdfstring{msgService}{msgService}}
+{\footnotesize\ttfamily struct \mbox{\hyperlink{struct_msg_service}{Msg\+Service}} msg\+Service}
+

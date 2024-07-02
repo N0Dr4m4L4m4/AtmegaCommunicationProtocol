@@ -1,0 +1,10 @@
+<map id="checkPackage" name="checkPackage">
+<area shape="rect" id="node1" title="Checks if a message has been received, if yes: the state machine changes with one package and starts ..." alt="" coords="5,56,113,83"/>
+<area shape="rect" id="node2" href="$layer2_8c.html#a2f02b445d682efb68beb9a25d8d1e2d0" title="Get the message without CRC calculation. Is needed for better performance. Copies data from buffer in..." alt="" coords="161,5,320,32"/>
+<area shape="rect" id="node4" href="$layer3_8c.html#a84ef46b56b16415da50f6f58ed4d4d51" title="This function is used to send packages from a source to a destination addressed device." alt="" coords="190,56,291,83"/>
+<area shape="rect" id="node8" href="$usart_8c.html#ab8c416106cf1aff4ccdb3da4860fc179" title="Send one character via the serial interface." alt="" coords="179,107,302,133"/>
+<area shape="rect" id="node3" href="$layer1_8c.html#abd4218622d0d31b6837d20253a41fa71" title="Resets receiving buffer." alt="" coords="375,5,463,32"/>
+<area shape="rect" id="node5" href="$layer2_8c.html#a1a1232f7ff473df2e38e88d9894e2d30" title="Send message with a given payload and size. Calculates the CRC32 of the payload notify layer1 to star..." alt="" coords="368,56,471,83"/>
+<area shape="rect" id="node6" href="$crc32_8c.html#a759eb2a449a7ff49f57bc3f9ec833d50" title="Calculate the CRC32 of a given payload." alt="" coords="522,31,611,57"/>
+<area shape="rect" id="node7" href="$timer_8c.html#af631be5096210aca72c407eb82d74f3d" title="Start timer 0 with a pre&#45;defined prescaler." alt="" coords="519,81,615,108"/>
+</map>

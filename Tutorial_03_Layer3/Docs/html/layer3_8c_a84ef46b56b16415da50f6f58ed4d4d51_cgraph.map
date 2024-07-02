@@ -1,0 +1,6 @@
+<map id="sendPackage" name="sendPackage">
+<area shape="rect" id="node1" title="This function is used to send packages from a source to a destination addressed device." alt="" coords="5,31,107,57"/>
+<area shape="rect" id="node2" href="$layer2_8c.html#a1a1232f7ff473df2e38e88d9894e2d30" title="Send message with a given payload and size. Calculates the CRC32 of the payload notify layer1 to star..." alt="" coords="155,31,257,57"/>
+<area shape="rect" id="node3" href="$crc32_8c.html#a759eb2a449a7ff49f57bc3f9ec833d50" title="Calculate the CRC32 of a given payload." alt="" coords="309,5,398,32"/>
+<area shape="rect" id="node4" href="$timer_8c.html#af631be5096210aca72c407eb82d74f3d" title="Start timer 0 with a pre&#45;defined prescaler." alt="" coords="305,56,401,83"/>
+</map>

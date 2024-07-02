@@ -1,0 +1,5 @@
+<map id="sendPackage" name="sendPackage">
+<area shape="rect" id="node1" title="This function is used to send packages from a source to a destination addressed device." alt="" coords="260,5,361,32"/>
+<area shape="rect" id="node2" href="$layer3_8c.html#aa93e76cf7f4339d63d8f3221837d1d3c" title="Checks if a message has been received, if yes: the state machine changes with one package and starts ..." alt="" coords="104,5,212,32"/>
+<area shape="rect" id="node3" href="$main_8c.html#ae66f6b31b5ad750f1fe042a706a4e3d4" title=" " alt="" coords="5,5,56,32"/>
+</map>

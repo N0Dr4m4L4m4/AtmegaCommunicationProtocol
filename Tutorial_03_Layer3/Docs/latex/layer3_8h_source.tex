@@ -1,0 +1,27 @@
+\hypertarget{layer3_8h_source}{}\doxysection{layer3.\+h}
+\label{layer3_8h_source}\index{Layer3/layer3.h@{Layer3/layer3.h}}
+\mbox{\hyperlink{layer3_8h}{Go to the documentation of this file.}}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{1 \textcolor{preprocessor}{\#define DES\_ADDRESS 1 }}
+\DoxyCodeLine{2 \textcolor{preprocessor}{\#define SRC\_ADDRESS 2 }}
+\DoxyCodeLine{3 \textcolor{preprocessor}{\#define PAYLOAD 3 }}
+\DoxyCodeLine{8 \textcolor{preprocessor}{\#define PRIORITY\_LOW 1}}
+\DoxyCodeLine{13 \textcolor{preprocessor}{\#define PRIORITY\_MEDIUM 2}}
+\DoxyCodeLine{18 \textcolor{preprocessor}{\#define PRIORITY\_HIGH 5}}
+\DoxyCodeLine{20 \textcolor{keyword}{typedef} \textcolor{keyword}{struct }\mbox{\hyperlink{structpackage__s}{package\_s}} \mbox{\hyperlink{structpackage__s}{package\_t}};}
+\DoxyCodeLine{25 \textcolor{keyword}{struct }\mbox{\hyperlink{structpackage__s}{package\_s}}\{}
+\DoxyCodeLine{26     uint8\_t \mbox{\hyperlink{structpackage__s_ab40e5bf327ed7ac9d56af3e3c9312245}{src\_addr}}; }
+\DoxyCodeLine{27     uint8\_t \mbox{\hyperlink{structpackage__s_ad06e0177b54a7eb032841e0304f2486b}{dst\_addr}}; }
+\DoxyCodeLine{28     uint8\_t \mbox{\hyperlink{structpackage__s_aca77c0d0d2fbec1e59d188a48544f931}{msg}}[250];}
+\DoxyCodeLine{29     uint8\_t \mbox{\hyperlink{structpackage__s_ac41de8ae9391134dbe78ea877af4765e}{size}}; }
+\DoxyCodeLine{30     uint8\_t \mbox{\hyperlink{structpackage__s_a339bb92d5ff971adf0e17e395f187367}{priority}}; }
+\DoxyCodeLine{31 \}; }
+\DoxyCodeLine{36 \textcolor{keyword}{struct }\mbox{\hyperlink{structpackage}{package}}\{}
+\DoxyCodeLine{37     \textcolor{keyword}{struct }\mbox{\hyperlink{structpackage__s}{package\_t}} *\mbox{\hyperlink{structpackage_a57309da7bcd8dfc435a976e457593464}{rx}};}
+\DoxyCodeLine{38     \textcolor{keyword}{struct }\mbox{\hyperlink{structpackage__s}{package\_t}} *\mbox{\hyperlink{structpackage_a6b34bb3824b3114d11ee73610b61972f}{tx}};}
+\DoxyCodeLine{39 \}\mbox{\hyperlink{layer3_8h_adc2541137643bd9fd05eee9963ba6141}{packages}};}
+\DoxyCodeLine{40 }
+\DoxyCodeLine{41 \textcolor{keywordtype}{void} \mbox{\hyperlink{layer3_8h_aa93e76cf7f4339d63d8f3221837d1d3c}{checkPackage}}();}
+\DoxyCodeLine{42 \textcolor{keywordtype}{void} \mbox{\hyperlink{layer3_8h_a84ef46b56b16415da50f6f58ed4d4d51}{sendPackage}}(uint8\_t* dest\_addr, uint8\_t* \mbox{\hyperlink{structpackage__s_ab40e5bf327ed7ac9d56af3e3c9312245}{src\_addr}}, uint8\_t* payload, uint8\_t payload\_size, uint8\_t \mbox{\hyperlink{structpackage__s_a339bb92d5ff971adf0e17e395f187367}{priority}});}
+
+\end{DoxyCode}

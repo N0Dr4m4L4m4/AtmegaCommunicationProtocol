@@ -1,0 +1,5 @@
+<map id="sendMessage" name="sendMessage">
+<area shape="rect" id="node1" title="Send message with a given payload and size. Calculates the CRC32 of the payload notify layer1 to star..." alt="" coords="5,31,108,57"/>
+<area shape="rect" id="node2" href="$crc32_8c.html#a759eb2a449a7ff49f57bc3f9ec833d50" title="Calculate the CRC32 of a given payload." alt="" coords="159,5,249,32"/>
+<area shape="rect" id="node3" href="$timer_8c.html#af631be5096210aca72c407eb82d74f3d" title="Start timer 0 with a pre&#45;defined prescaler." alt="" coords="156,56,252,83"/>
+</map>

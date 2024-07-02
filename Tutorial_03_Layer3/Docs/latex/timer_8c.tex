@@ -1,0 +1,86 @@
+\hypertarget{timer_8c}{}\doxysection{Layer1/timer.c File Reference}
+\label{timer_8c}\index{Layer1/timer.c@{Layer1/timer.c}}
+{\ttfamily \#include $<$avr/io.\+h$>$}\newline
+{\ttfamily \#include $<$avr/interrupt.\+h$>$}\newline
+{\ttfamily \#include \char`\"{}../\+Buffer/buffer.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}../\+Layer1/timer.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}../\+Layer1/layer1.\+h\char`\"{}}\newline
+Include dependency graph for timer.\+c\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{timer_8c__incl}
+\end{center}
+\end{figure}
+\doxysubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{timer_8c_aa8a37829650405a8ccc75b1ed9b20456}{Init\+Timer\+\_\+0}} ()
+\begin{DoxyCompactList}\small\item\em Initialize Timer 0 and the ISR. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{timer_8c_af631be5096210aca72c407eb82d74f3d}{Start\+Timer\+\_\+0}} (uint8\+\_\+t $\ast$prescaler)
+\begin{DoxyCompactList}\small\item\em Start timer 0 with a pre-\/defined prescaler. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{timer_8c_aae435fa14f91401869f7adf07fcbdada}{Stop\+Timer\+\_\+0}} ()
+\begin{DoxyCompactList}\small\item\em Stops timer 0 from working. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Function Documentation}
+\mbox{\Hypertarget{timer_8c_aa8a37829650405a8ccc75b1ed9b20456}\label{timer_8c_aa8a37829650405a8ccc75b1ed9b20456}} 
+\index{timer.c@{timer.c}!InitTimer\_0@{InitTimer\_0}}
+\index{InitTimer\_0@{InitTimer\_0}!timer.c@{timer.c}}
+\doxysubsubsection{\texorpdfstring{InitTimer\_0()}{InitTimer\_0()}}
+{\footnotesize\ttfamily void Init\+Timer\+\_\+0 (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Initialize Timer 0 and the ISR. 
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{timer_8c_aa8a37829650405a8ccc75b1ed9b20456_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{timer_8c_af631be5096210aca72c407eb82d74f3d}\label{timer_8c_af631be5096210aca72c407eb82d74f3d}} 
+\index{timer.c@{timer.c}!StartTimer\_0@{StartTimer\_0}}
+\index{StartTimer\_0@{StartTimer\_0}!timer.c@{timer.c}}
+\doxysubsubsection{\texorpdfstring{StartTimer\_0()}{StartTimer\_0()}}
+{\footnotesize\ttfamily void Start\+Timer\+\_\+0 (\begin{DoxyParamCaption}\item[{uint8\+\_\+t $\ast$}]{prescaler }\end{DoxyParamCaption})}
+
+
+
+Start timer 0 with a pre-\/defined prescaler. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em prescaler} & NO\+\_\+\+PRE, PRE\+\_\+8, PRE\+\_\+64, PRE\+\_\+256, PRE\+\_\+1024 \\
+\hline
+\end{DoxyParams}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{timer_8c_af631be5096210aca72c407eb82d74f3d_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{timer_8c_aae435fa14f91401869f7adf07fcbdada}\label{timer_8c_aae435fa14f91401869f7adf07fcbdada}} 
+\index{timer.c@{timer.c}!StopTimer\_0@{StopTimer\_0}}
+\index{StopTimer\_0@{StopTimer\_0}!timer.c@{timer.c}}
+\doxysubsubsection{\texorpdfstring{StopTimer\_0()}{StopTimer\_0()}}
+{\footnotesize\ttfamily void Stop\+Timer\+\_\+0 (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Stops timer 0 from working. 
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=320pt]{timer_8c_aae435fa14f91401869f7adf07fcbdada_icgraph}
+\end{center}
+\end{figure}

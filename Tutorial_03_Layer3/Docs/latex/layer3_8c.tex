@@ -1,0 +1,128 @@
+\hypertarget{layer3_8c}{}\doxysection{Layer3/layer3.c File Reference}
+\label{layer3_8c}\index{Layer3/layer3.c@{Layer3/layer3.c}}
+{\ttfamily \#include $<$avr/io.\+h$>$}\newline
+{\ttfamily \#include \char`\"{}../\+Layer2/layer2.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}../\+Layer3/layer3.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}../\+Buffer/buffer.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}../\+USART/usart.\+h\char`\"{}}\newline
+Include dependency graph for layer3.\+c\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{layer3_8c__incl}
+\end{center}
+\end{figure}
+\doxysubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{layer3_8c_a84ef46b56b16415da50f6f58ed4d4d51}{send\+Package}} (uint8\+\_\+t $\ast$dest\+\_\+addr, uint8\+\_\+t $\ast$src\+\_\+addr, uint8\+\_\+t $\ast$payload, uint8\+\_\+t payload\+\_\+size, uint8\+\_\+t priority)
+\begin{DoxyCompactList}\small\item\em This function is used to send packages from a source to a destination addressed device. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{layer3_8c_aa93e76cf7f4339d63d8f3221837d1d3c}{check\+Package}} ()
+\begin{DoxyCompactList}\small\item\em Checks if a message has been received, if yes\+: the state machine changes with one package and starts with receiving the destination address. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+uint8\+\_\+t \mbox{\hyperlink{layer3_8c_a0b57aa10271a66f3dc936bba1d2f3830}{state}} = \mbox{\hyperlink{layer3_8h_ab53a137edf88dc284741fac294d551ec}{DES\+\_\+\+ADDRESS}}
+\item 
+const uint8\+\_\+t \mbox{\hyperlink{layer3_8c_a9867c0d3f0f71ee4b6437649d9d7e0db}{pi\+\_\+adr}} = 9
+\item 
+uint8\+\_\+t \mbox{\hyperlink{layer3_8c_a393253b7e8aad857a2a7177889682b11}{system\+\_\+priority}} = \mbox{\hyperlink{layer3_8h_af9877767f734190a66ec73e03252e1ce}{PRIORITY\+\_\+\+LOW}}
+\item 
+\mbox{\hyperlink{layer3_8h_a08e24056949544beb2b7b1d3cb7ced55}{package\+\_\+t}} \mbox{\hyperlink{layer3_8c_af95d03f94b5a09759ccb8d001a7e5da1}{rx}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Function Documentation}
+\mbox{\Hypertarget{layer3_8c_aa93e76cf7f4339d63d8f3221837d1d3c}\label{layer3_8c_aa93e76cf7f4339d63d8f3221837d1d3c}} 
+\index{layer3.c@{layer3.c}!checkPackage@{checkPackage}}
+\index{checkPackage@{checkPackage}!layer3.c@{layer3.c}}
+\doxysubsubsection{\texorpdfstring{checkPackage()}{checkPackage()}}
+{\footnotesize\ttfamily void check\+Package (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Checks if a message has been received, if yes\+: the state machine changes with one package and starts with receiving the destination address. 
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{layer3_8c_aa93e76cf7f4339d63d8f3221837d1d3c_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=235pt]{layer3_8c_aa93e76cf7f4339d63d8f3221837d1d3c_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{layer3_8c_a84ef46b56b16415da50f6f58ed4d4d51}\label{layer3_8c_a84ef46b56b16415da50f6f58ed4d4d51}} 
+\index{layer3.c@{layer3.c}!sendPackage@{sendPackage}}
+\index{sendPackage@{sendPackage}!layer3.c@{layer3.c}}
+\doxysubsubsection{\texorpdfstring{sendPackage()}{sendPackage()}}
+{\footnotesize\ttfamily void send\+Package (\begin{DoxyParamCaption}\item[{uint8\+\_\+t $\ast$}]{dest\+\_\+addr,  }\item[{uint8\+\_\+t $\ast$}]{src\+\_\+addr,  }\item[{uint8\+\_\+t $\ast$}]{payload,  }\item[{uint8\+\_\+t}]{payload\+\_\+size,  }\item[{uint8\+\_\+t}]{priority }\end{DoxyParamCaption})}
+
+
+
+This function is used to send packages from a source to a destination addressed device. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em dest\+\_\+addr} & destination address of the device \\
+\hline
+{\em src\+\_\+addr} & source address of the device \\
+\hline
+{\em payload} & payload as uint8\+\_\+t array \\
+\hline
+{\em payload\+\_\+size} & size of the payload \\
+\hline
+{\em priority} & priority of the message(\+LOW,\+MEDIUM,\+HIGH) \\
+\hline
+\end{DoxyParams}
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{layer3_8c_a84ef46b56b16415da50f6f58ed4d4d51_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=347pt]{layer3_8c_a84ef46b56b16415da50f6f58ed4d4d51_icgraph}
+\end{center}
+\end{figure}
+
+
+\doxysubsection{Variable Documentation}
+\mbox{\Hypertarget{layer3_8c_a9867c0d3f0f71ee4b6437649d9d7e0db}\label{layer3_8c_a9867c0d3f0f71ee4b6437649d9d7e0db}} 
+\index{layer3.c@{layer3.c}!pi\_adr@{pi\_adr}}
+\index{pi\_adr@{pi\_adr}!layer3.c@{layer3.c}}
+\doxysubsubsection{\texorpdfstring{pi\_adr}{pi\_adr}}
+{\footnotesize\ttfamily const uint8\+\_\+t pi\+\_\+adr = 9}
+
+\mbox{\Hypertarget{layer3_8c_af95d03f94b5a09759ccb8d001a7e5da1}\label{layer3_8c_af95d03f94b5a09759ccb8d001a7e5da1}} 
+\index{layer3.c@{layer3.c}!rx@{rx}}
+\index{rx@{rx}!layer3.c@{layer3.c}}
+\doxysubsubsection{\texorpdfstring{rx}{rx}}
+{\footnotesize\ttfamily \mbox{\hyperlink{layer3_8h_a08e24056949544beb2b7b1d3cb7ced55}{package\+\_\+t}} rx}
+
+\mbox{\Hypertarget{layer3_8c_a0b57aa10271a66f3dc936bba1d2f3830}\label{layer3_8c_a0b57aa10271a66f3dc936bba1d2f3830}} 
+\index{layer3.c@{layer3.c}!state@{state}}
+\index{state@{state}!layer3.c@{layer3.c}}
+\doxysubsubsection{\texorpdfstring{state}{state}}
+{\footnotesize\ttfamily uint8\+\_\+t state = \mbox{\hyperlink{layer3_8h_ab53a137edf88dc284741fac294d551ec}{DES\+\_\+\+ADDRESS}}}
+
+\mbox{\Hypertarget{layer3_8c_a393253b7e8aad857a2a7177889682b11}\label{layer3_8c_a393253b7e8aad857a2a7177889682b11}} 
+\index{layer3.c@{layer3.c}!system\_priority@{system\_priority}}
+\index{system\_priority@{system\_priority}!layer3.c@{layer3.c}}
+\doxysubsubsection{\texorpdfstring{system\_priority}{system\_priority}}
+{\footnotesize\ttfamily uint8\+\_\+t system\+\_\+priority = \mbox{\hyperlink{layer3_8h_af9877767f734190a66ec73e03252e1ce}{PRIORITY\+\_\+\+LOW}}}
+

@@ -1,0 +1,4 @@
+<map id="TX_RESET" name="TX_RESET">
+<area shape="rect" id="node1" title="Resets transmission buffer." alt="" coords="5,5,92,32"/>
+<area shape="rect" id="node2" href="$timer_8c.html#aae435fa14f91401869f7adf07fcbdada" title="Stops timer 0 from working." alt="" coords="140,5,235,32"/>
+</map>

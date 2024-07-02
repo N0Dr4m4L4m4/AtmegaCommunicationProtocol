@@ -1,0 +1,4 @@
+<map id="TX_RESET" name="TX_RESET">
+<area shape="rect" id="node1" title="Resets transmission buffer." alt="" coords="96,5,183,32"/>
+<area shape="rect" id="node2" href="$irqhandler_8c.html#add2d7cdddfb682dcc0391e60cf42c7d6" title="byteCntrRx buffer counter for receiving one byte 0 &#45; 255" alt="" coords="5,5,48,32"/>
+</map>

@@ -1,0 +1,11 @@
+<map id="Layer2" name="Layer2">
+<area shape="rect" id="node1" href="dir_74617119673875e10200d25ee98320ad.html" title="Layer2" alt="" coords="149,5,221,53"/>
+<area shape="rect" id="node2" href="dir_1ee9b378ef0c5ab9d21c4b02c25fc7f8.html" title="USART" alt="" coords="5,101,77,149"/>
+<area shape="rect" id="edge1-headlabel" href="dir_000004_000006.html" title="1" alt="" coords="93,91,101,106"/>
+<area shape="rect" id="node3" href="dir_83bcd120bc5d429078ec325e0ff24ab8.html" title="Buffer" alt="" coords="101,101,173,149"/>
+<area shape="rect" id="edge4-headlabel" href="dir_000004_000000.html" title="1" alt="" coords="161,82,169,96"/>
+<area shape="rect" id="node4" href="dir_6084554d536f9e351cd50e07459619fd.html" title="CRC32" alt="" coords="197,101,269,149"/>
+<area shape="rect" id="edge3-headlabel" href="dir_000004_000001.html" title="1" alt="" coords="217,74,225,89"/>
+<area shape="rect" id="node5" href="dir_21d8d7cba2098660b569566763a5254b.html" title="Layer1" alt="" coords="293,101,365,149"/>
+<area shape="rect" id="edge2-headlabel" href="dir_000004_000003.html" title="2" alt="" coords="279,77,287,91"/>
+</map>

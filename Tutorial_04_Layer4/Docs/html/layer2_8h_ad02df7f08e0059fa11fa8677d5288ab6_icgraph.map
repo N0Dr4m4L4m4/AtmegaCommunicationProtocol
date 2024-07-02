@@ -1,0 +1,4 @@
+<map id="InitMessageServiceTX" name="InitMessageServiceTX">
+<area shape="rect" id="node1" title="Initialize transmitter service to send messages with a given port, mask and prescaler for clock." alt="" coords="104,5,252,32"/>
+<area shape="rect" id="node2" href="$main_8c.html#ae66f6b31b5ad750f1fe042a706a4e3d4" title=" " alt="" coords="5,5,56,32"/>
+</map>

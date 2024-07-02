@@ -1,0 +1,7 @@
+<map id="RX_RESET" name="RX_RESET">
+<area shape="rect" id="node1" title="Resets receiving buffer." alt="" coords="467,31,555,57"/>
+<area shape="rect" id="node2" href="$layer2_8c.html#a30537337faf9a89c325c0a39a63ab0ab" title="Check if a message was recieved, if yes: message will be written in the given msg pointer when crc ch..." alt="" coords="293,5,386,32"/>
+<area shape="rect" id="node3" href="$layer2_8c.html#a2f02b445d682efb68beb9a25d8d1e2d0" title="Get the message without CRC calculation. Is needed for better performance. Copies data from buffer in..." alt="" coords="260,56,419,83"/>
+<area shape="rect" id="node4" href="$layer3_8c.html#aa93e76cf7f4339d63d8f3221837d1d3c" title="Checks if a message has been received, if yes: the state machine changes with one package and starts ..." alt="" coords="104,56,212,83"/>
+<area shape="rect" id="node5" href="$main_8c.html#ae66f6b31b5ad750f1fe042a706a4e3d4" title=" " alt="" coords="5,56,56,83"/>
+</map>

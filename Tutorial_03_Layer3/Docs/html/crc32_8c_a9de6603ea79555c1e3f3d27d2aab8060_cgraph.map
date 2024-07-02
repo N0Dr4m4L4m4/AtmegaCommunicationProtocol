@@ -1,0 +1,4 @@
+<map id="CheckCRC32" name="CheckCRC32">
+<area shape="rect" id="node1" title="Calculates the CRC32 checksum of the payload with size max. 250 and compares it with the recieved one..." alt="" coords="5,5,105,32"/>
+<area shape="rect" id="node2" href="$crc32_8c.html#a759eb2a449a7ff49f57bc3f9ec833d50" title="Calculate the CRC32 of a given payload." alt="" coords="153,5,243,32"/>
+</map>

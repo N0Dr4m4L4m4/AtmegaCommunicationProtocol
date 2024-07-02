@@ -1,0 +1,5 @@
+<map id="InitTimer_0" name="InitTimer_0">
+<area shape="rect" id="node1" title="Initialize Timer 0 and the ISR." alt="" coords="300,5,385,32"/>
+<area shape="rect" id="node2" href="$layer2_8c.html#ad02df7f08e0059fa11fa8677d5288ab6" title="Initialize transmitter service to send messages with a given port, mask and prescaler for clock." alt="" coords="104,5,252,32"/>
+<area shape="rect" id="node3" href="$main_8c.html#ae66f6b31b5ad750f1fe042a706a4e3d4" title=" " alt="" coords="5,5,56,32"/>
+</map>

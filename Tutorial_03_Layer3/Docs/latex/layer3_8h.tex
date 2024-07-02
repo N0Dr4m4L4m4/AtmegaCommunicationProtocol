@@ -1,0 +1,190 @@
+\hypertarget{layer3_8h}{}\doxysection{Layer3/layer3.h File Reference}
+\label{layer3_8h}\index{Layer3/layer3.h@{Layer3/layer3.h}}
+This graph shows which files directly or indirectly include this file\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=228pt]{layer3_8h__dep__incl}
+\end{center}
+\end{figure}
+\doxysubsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+struct \mbox{\hyperlink{structpackage__s}{package\+\_\+s}}
+\begin{DoxyCompactList}\small\item\em Package object for layer 3. \end{DoxyCompactList}\item 
+struct \mbox{\hyperlink{structpackage}{package}}
+\begin{DoxyCompactList}\small\item\em Struct of packages for transmission and receiving. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Macros}
+\begin{DoxyCompactItemize}
+\item 
+\#define \mbox{\hyperlink{layer3_8h_ab53a137edf88dc284741fac294d551ec}{DES\+\_\+\+ADDRESS}}~1 /$\ast$$\ast$ @brief destination address received \mbox{\hyperlink{layer3_8c_a0b57aa10271a66f3dc936bba1d2f3830}{state}}$\ast$/
+\item 
+\#define \mbox{\hyperlink{layer3_8h_a871dfb29e0f47ea91e88be6445934a63}{SRC\+\_\+\+ADDRESS}}~2 /$\ast$$\ast$ @brief source address receiver \mbox{\hyperlink{layer3_8c_a0b57aa10271a66f3dc936bba1d2f3830}{state}}$\ast$/
+\item 
+\#define \mbox{\hyperlink{layer3_8h_a35312e3b62c575eb2a53856683c11ddc}{PAYLOAD}}~3 /$\ast$$\ast$ @brief payload \mbox{\hyperlink{layer3_8c_a0b57aa10271a66f3dc936bba1d2f3830}{state}}$\ast$/
+\item 
+\#define \mbox{\hyperlink{layer3_8h_af9877767f734190a66ec73e03252e1ce}{PRIORITY\+\_\+\+LOW}}~1
+\begin{DoxyCompactList}\small\item\em Priority level low. \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{layer3_8h_a676d1a39b0be995ee18e6e45ff96ba4c}{PRIORITY\+\_\+\+MEDIUM}}~2
+\begin{DoxyCompactList}\small\item\em Priority level medium. \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{layer3_8h_aaca04d3893d808496a90f8f0d0b8fcaa}{PRIORITY\+\_\+\+HIGH}}~5
+\begin{DoxyCompactList}\small\item\em Priority level high. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Typedefs}
+\begin{DoxyCompactItemize}
+\item 
+typedef struct \mbox{\hyperlink{structpackage__s}{package\+\_\+s}} \mbox{\hyperlink{layer3_8h_a08e24056949544beb2b7b1d3cb7ced55}{package\+\_\+t}}
+\begin{DoxyCompactList}\small\item\em Type definition of package. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{layer3_8h_aa93e76cf7f4339d63d8f3221837d1d3c}{check\+Package}} ()
+\begin{DoxyCompactList}\small\item\em Checks if a message has been received, if yes\+: the state machine changes with one package and starts with receiving the destination address. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{layer3_8h_a84ef46b56b16415da50f6f58ed4d4d51}{send\+Package}} (uint8\+\_\+t $\ast$dest\+\_\+addr, uint8\+\_\+t $\ast$src\+\_\+addr, uint8\+\_\+t $\ast$payload, uint8\+\_\+t payload\+\_\+size, uint8\+\_\+t priority)
+\begin{DoxyCompactList}\small\item\em This function is used to send packages from a source to a destination addressed device. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+struct \mbox{\hyperlink{structpackage}{package}} \mbox{\hyperlink{layer3_8h_adc2541137643bd9fd05eee9963ba6141}{packages}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Macro Definition Documentation}
+\mbox{\Hypertarget{layer3_8h_ab53a137edf88dc284741fac294d551ec}\label{layer3_8h_ab53a137edf88dc284741fac294d551ec}} 
+\index{layer3.h@{layer3.h}!DES\_ADDRESS@{DES\_ADDRESS}}
+\index{DES\_ADDRESS@{DES\_ADDRESS}!layer3.h@{layer3.h}}
+\doxysubsubsection{\texorpdfstring{DES\_ADDRESS}{DES\_ADDRESS}}
+{\footnotesize\ttfamily \#define DES\+\_\+\+ADDRESS~1 /$\ast$$\ast$ @brief destination address received \mbox{\hyperlink{layer3_8c_a0b57aa10271a66f3dc936bba1d2f3830}{state}}$\ast$/}
+
+\mbox{\Hypertarget{layer3_8h_a35312e3b62c575eb2a53856683c11ddc}\label{layer3_8h_a35312e3b62c575eb2a53856683c11ddc}} 
+\index{layer3.h@{layer3.h}!PAYLOAD@{PAYLOAD}}
+\index{PAYLOAD@{PAYLOAD}!layer3.h@{layer3.h}}
+\doxysubsubsection{\texorpdfstring{PAYLOAD}{PAYLOAD}}
+{\footnotesize\ttfamily \#define PAYLOAD~3 /$\ast$$\ast$ @brief payload \mbox{\hyperlink{layer3_8c_a0b57aa10271a66f3dc936bba1d2f3830}{state}}$\ast$/}
+
+\mbox{\Hypertarget{layer3_8h_aaca04d3893d808496a90f8f0d0b8fcaa}\label{layer3_8h_aaca04d3893d808496a90f8f0d0b8fcaa}} 
+\index{layer3.h@{layer3.h}!PRIORITY\_HIGH@{PRIORITY\_HIGH}}
+\index{PRIORITY\_HIGH@{PRIORITY\_HIGH}!layer3.h@{layer3.h}}
+\doxysubsubsection{\texorpdfstring{PRIORITY\_HIGH}{PRIORITY\_HIGH}}
+{\footnotesize\ttfamily \#define PRIORITY\+\_\+\+HIGH~5}
+
+
+
+Priority level high. 
+
+\mbox{\Hypertarget{layer3_8h_af9877767f734190a66ec73e03252e1ce}\label{layer3_8h_af9877767f734190a66ec73e03252e1ce}} 
+\index{layer3.h@{layer3.h}!PRIORITY\_LOW@{PRIORITY\_LOW}}
+\index{PRIORITY\_LOW@{PRIORITY\_LOW}!layer3.h@{layer3.h}}
+\doxysubsubsection{\texorpdfstring{PRIORITY\_LOW}{PRIORITY\_LOW}}
+{\footnotesize\ttfamily \#define PRIORITY\+\_\+\+LOW~1}
+
+
+
+Priority level low. 
+
+\mbox{\Hypertarget{layer3_8h_a676d1a39b0be995ee18e6e45ff96ba4c}\label{layer3_8h_a676d1a39b0be995ee18e6e45ff96ba4c}} 
+\index{layer3.h@{layer3.h}!PRIORITY\_MEDIUM@{PRIORITY\_MEDIUM}}
+\index{PRIORITY\_MEDIUM@{PRIORITY\_MEDIUM}!layer3.h@{layer3.h}}
+\doxysubsubsection{\texorpdfstring{PRIORITY\_MEDIUM}{PRIORITY\_MEDIUM}}
+{\footnotesize\ttfamily \#define PRIORITY\+\_\+\+MEDIUM~2}
+
+
+
+Priority level medium. 
+
+\mbox{\Hypertarget{layer3_8h_a871dfb29e0f47ea91e88be6445934a63}\label{layer3_8h_a871dfb29e0f47ea91e88be6445934a63}} 
+\index{layer3.h@{layer3.h}!SRC\_ADDRESS@{SRC\_ADDRESS}}
+\index{SRC\_ADDRESS@{SRC\_ADDRESS}!layer3.h@{layer3.h}}
+\doxysubsubsection{\texorpdfstring{SRC\_ADDRESS}{SRC\_ADDRESS}}
+{\footnotesize\ttfamily \#define SRC\+\_\+\+ADDRESS~2 /$\ast$$\ast$ @brief source address receiver \mbox{\hyperlink{layer3_8c_a0b57aa10271a66f3dc936bba1d2f3830}{state}}$\ast$/}
+
+
+
+\doxysubsection{Typedef Documentation}
+\mbox{\Hypertarget{layer3_8h_a08e24056949544beb2b7b1d3cb7ced55}\label{layer3_8h_a08e24056949544beb2b7b1d3cb7ced55}} 
+\index{layer3.h@{layer3.h}!package\_t@{package\_t}}
+\index{package\_t@{package\_t}!layer3.h@{layer3.h}}
+\doxysubsubsection{\texorpdfstring{package\_t}{package\_t}}
+{\footnotesize\ttfamily typedef struct \mbox{\hyperlink{structpackage__s}{package\+\_\+s}} \mbox{\hyperlink{layer3_8h_a08e24056949544beb2b7b1d3cb7ced55}{package\+\_\+t}}}
+
+
+
+Type definition of package. 
+
+
+
+\doxysubsection{Function Documentation}
+\mbox{\Hypertarget{layer3_8h_aa93e76cf7f4339d63d8f3221837d1d3c}\label{layer3_8h_aa93e76cf7f4339d63d8f3221837d1d3c}} 
+\index{layer3.h@{layer3.h}!checkPackage@{checkPackage}}
+\index{checkPackage@{checkPackage}!layer3.h@{layer3.h}}
+\doxysubsubsection{\texorpdfstring{checkPackage()}{checkPackage()}}
+{\footnotesize\ttfamily void check\+Package (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Checks if a message has been received, if yes\+: the state machine changes with one package and starts with receiving the destination address. 
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{layer3_8h_aa93e76cf7f4339d63d8f3221837d1d3c_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=235pt]{layer3_8h_aa93e76cf7f4339d63d8f3221837d1d3c_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{layer3_8h_a84ef46b56b16415da50f6f58ed4d4d51}\label{layer3_8h_a84ef46b56b16415da50f6f58ed4d4d51}} 
+\index{layer3.h@{layer3.h}!sendPackage@{sendPackage}}
+\index{sendPackage@{sendPackage}!layer3.h@{layer3.h}}
+\doxysubsubsection{\texorpdfstring{sendPackage()}{sendPackage()}}
+{\footnotesize\ttfamily void send\+Package (\begin{DoxyParamCaption}\item[{uint8\+\_\+t $\ast$}]{dest\+\_\+addr,  }\item[{uint8\+\_\+t $\ast$}]{src\+\_\+addr,  }\item[{uint8\+\_\+t $\ast$}]{payload,  }\item[{uint8\+\_\+t}]{payload\+\_\+size,  }\item[{uint8\+\_\+t}]{priority }\end{DoxyParamCaption})}
+
+
+
+This function is used to send packages from a source to a destination addressed device. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em dest\+\_\+addr} & destination address of the device \\
+\hline
+{\em src\+\_\+addr} & source address of the device \\
+\hline
+{\em payload} & payload as uint8\+\_\+t array \\
+\hline
+{\em payload\+\_\+size} & size of the payload \\
+\hline
+{\em priority} & priority of the message(\+LOW,\+MEDIUM,\+HIGH) \\
+\hline
+\end{DoxyParams}
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{layer3_8h_a84ef46b56b16415da50f6f58ed4d4d51_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=347pt]{layer3_8h_a84ef46b56b16415da50f6f58ed4d4d51_icgraph}
+\end{center}
+\end{figure}
+
+
+\doxysubsection{Variable Documentation}
+\mbox{\Hypertarget{layer3_8h_adc2541137643bd9fd05eee9963ba6141}\label{layer3_8h_adc2541137643bd9fd05eee9963ba6141}} 
+\index{layer3.h@{layer3.h}!packages@{packages}}
+\index{packages@{packages}!layer3.h@{layer3.h}}
+\doxysubsubsection{\texorpdfstring{packages}{packages}}
+{\footnotesize\ttfamily struct \mbox{\hyperlink{structpackage}{package}} packages}
+

@@ -1,0 +1,4 @@
+<map id="USART_Transmit_String" name="USART_Transmit_String">
+<area shape="rect" id="node1" title="Sends more than one character via the serial interface." alt="" coords="5,5,168,32"/>
+<area shape="rect" id="node2" href="$usart_8c.html#ab8c416106cf1aff4ccdb3da4860fc179" title="Send one character via the serial interface." alt="" coords="216,5,339,32"/>
+</map>

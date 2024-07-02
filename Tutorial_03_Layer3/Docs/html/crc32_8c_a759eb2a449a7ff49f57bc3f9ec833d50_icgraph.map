@@ -1,0 +1,9 @@
+<map id="CalcCRC32" name="CalcCRC32">
+<area shape="rect" id="node1" title="Calculate the CRC32 of a given payload." alt="" coords="560,31,649,57"/>
+<area shape="rect" id="node2" href="$crc32_8c.html#a9de6603ea79555c1e3f3d27d2aab8060" title="Calculates the CRC32 checksum of the payload with size max. 250 and compares it with the recieved one..." alt="" coords="411,5,511,32"/>
+<area shape="rect" id="node4" href="$layer2_8c.html#a1a1232f7ff473df2e38e88d9894e2d30" title="Send message with a given payload and size. Calculates the CRC32 of the payload notify layer1 to star..." alt="" coords="409,56,512,83"/>
+<area shape="rect" id="node3" href="$layer2_8c.html#a30537337faf9a89c325c0a39a63ab0ab" title="Check if a message was recieved, if yes: message will be written in the given msg pointer when crc ch..." alt="" coords="264,5,357,32"/>
+<area shape="rect" id="node5" href="$layer3_8c.html#a84ef46b56b16415da50f6f58ed4d4d51" title="This function is used to send packages from a source to a destination addressed device." alt="" coords="260,56,361,83"/>
+<area shape="rect" id="node6" href="$layer3_8c.html#aa93e76cf7f4339d63d8f3221837d1d3c" title="Checks if a message has been received, if yes: the state machine changes with one package and starts ..." alt="" coords="104,56,212,83"/>
+<area shape="rect" id="node7" href="$main_8c.html#ae66f6b31b5ad750f1fe042a706a4e3d4" title=" " alt="" coords="5,56,56,83"/>
+</map>

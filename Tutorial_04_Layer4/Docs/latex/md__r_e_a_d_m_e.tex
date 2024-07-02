@@ -1,0 +1,52 @@
+\hypertarget{md__r_e_a_d_m_e_autotoc_md1}{}\doxysection{Author\+:  Robin Gerstmann}\label{md__r_e_a_d_m_e_autotoc_md1}
+\hypertarget{md__r_e_a_d_m_e_autotoc_md2}{}\doxysection{Technologie}\label{md__r_e_a_d_m_e_autotoc_md2}
+\hypertarget{md__r_e_a_d_m_e_autotoc_md3}{}\doxysubsection{Programmiersprache}\label{md__r_e_a_d_m_e_autotoc_md3}
+Für das verwendete Protokoll wurde die Programmiersprache C verwendet.\hypertarget{md__r_e_a_d_m_e_autotoc_md4}{}\doxysubsection{Hardware}\label{md__r_e_a_d_m_e_autotoc_md4}
+
+\begin{DoxyItemize}
+\item Raspberry Pi
+\item Gertboard
+\item Mikrocontroller\+: Atmega328p von Atmel (jetzt Microchip)
+\end{DoxyItemize}\hypertarget{md__r_e_a_d_m_e_autotoc_md5}{}\doxysubsection{Toolchain}\label{md__r_e_a_d_m_e_autotoc_md5}
+
+\begin{DoxyItemize}
+\item Betriebsystem\+: UNIX basierende Systeme sind empfohlen. Unter Windows mit zusätzlichen Programmen jedoch auch möglich.
+\item Serielle Kommunikation\+: USART-\/\+Protokoll wird hier verwendet.
+\end{DoxyItemize}
+
+\begin{quote}
+{\bfseries{Kommando\+:}} minicom ama0 -\/H \end{quote}
+
+\begin{DoxyItemize}
+\item Compiler\+: avr-\/gcc cross-\/compiler für AVR basierende Mikrocontroller
+\item avrdude\+: AVRDUDE nutzt ISP um den Mikrocontroller zu flashen
+\end{DoxyItemize}\hypertarget{md__r_e_a_d_m_e_autotoc_md6}{}\doxysubsection{Installation}\label{md__r_e_a_d_m_e_autotoc_md6}
+
+\begin{DoxyItemize}
+\item Minicom installation in Linux (Debian, Ubuntu, Kali, Mint) \begin{quote}
+{\bfseries{Kommando\+:}} sudo apt install minicom -\/y \end{quote}
+
+\item Minicom installation in Linux (Fedora, Cent\+OS, RHEL) \begin{quote}
+{\bfseries{Kommando\+:}} sudo yum install minicom -\/y \end{quote}
+
+\item avrdude installation in Linux \begin{quote}
+{\bfseries{Kommando\+:}} sudo apt-\/get install avrdude \end{quote}
+
+\item AVR tool chain installation\+: \begin{quote}
+{\bfseries{Kommando\+:}} sudo apt-\/get install gcc-\/avr binutils-\/avr avr-\/libc \end{quote}
+
+\end{DoxyItemize}\hypertarget{md__r_e_a_d_m_e_autotoc_md7}{}\doxysubsection{Anmerkung}\label{md__r_e_a_d_m_e_autotoc_md7}
+
+\begin{DoxyItemize}
+\item Die Dokumentation ist allgemein in Englisch beschrieben. Nur diese Seite wurde auf deutsch geschrieben.
+\end{DoxyItemize}\hypertarget{md__r_e_a_d_m_e_autotoc_md8}{}\doxysubsection{Referenzlinks\+:}\label{md__r_e_a_d_m_e_autotoc_md8}
+
+\begin{DoxyItemize}
+\item \mbox{[} Rasp\+Net protocol \mbox{]}\+: \mbox{[} \href{https://osg.informatik.tu-chemnitz.de/lehre/emblab/protocol_final_4stud.pdf}{\texttt{ https\+://osg.\+informatik.\+tu-\/chemnitz.\+de/lehre/emblab/protocol\+\_\+final\+\_\+4stud.\+pdf}} \mbox{]}
+\item \mbox{[}Gertboard Manual\mbox{]}\+: \mbox{[} \href{https://osg.informatik.tu-chemnitz.de/lehre/emblab/gertboard_manual_2.0.pdf}{\texttt{ https\+://osg.\+informatik.\+tu-\/chemnitz.\+de/lehre/emblab/gertboard\+\_\+manual\+\_\+2.\+0.\+pdf}} \mbox{]}
+\item \mbox{[}AVR\mbox{]}\+: \mbox{[} \href{https://osg.informatik.tu-chemnitz.de/lehre/emblab/atmel.pdf}{\texttt{ https\+://osg.\+informatik.\+tu-\/chemnitz.\+de/lehre/emblab/atmel.\+pdf}} \mbox{]}
+\item \mbox{[}avrdude\mbox{]}\+: \mbox{[}\href{https://www.nongnu.org/avrdude/}{\texttt{ https\+://www.\+nongnu.\+org/avrdude/}} \mbox{]}
+\item \mbox{[}avr-\/gcc\mbox{]}\+: \mbox{[}\href{https://gcc.gnu.org/wiki/avr-gcc}{\texttt{ https\+://gcc.\+gnu.\+org/wiki/avr-\/gcc}} \mbox{]}
+\item \mbox{[}Minicom\mbox{]}\+: \mbox{[}\href{https://salsa.debian.org/minicom-team/minicom5}{\texttt{ https\+://salsa.\+debian.\+org/minicom-\/team/minicom5}} \mbox{]}
+\item \mbox{[}Raspberry Pi\mbox{]}\+: \mbox{[}\href{https://www.raspberrypi.org/}{\texttt{ https\+://www.\+raspberrypi.\+org/}} \mbox{]} 
+\end{DoxyItemize}
